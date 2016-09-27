@@ -261,7 +261,7 @@ class PlgSystemMVCOverride extends JPlugin
 
 		if ($type == 'helpers')
 		{
-			JLoader::register($indexName, $filePath);
+			include_once($filePath);
 		}
 		else
 		{
